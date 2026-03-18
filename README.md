@@ -1,5 +1,7 @@
 # Fuzz shop
 
+tienda de ropa
+
 ```sh
 npm create astro@latest -- --template basics
 ```
