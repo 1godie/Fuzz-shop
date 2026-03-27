@@ -1,3 +1,9 @@
+---
+import "../styles/global.css";
+import { Icon } from "astro-icon/components";
+
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,7 +14,15 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Fuzz Shop</title>
 	</head>
+
 	<body>
+		<header>
+			<Icon name="usuario"/>
+		</header>
+		<header>
+			<Icon name="carrito"/>
+		</header>
+
 		<header>
 			<p>Fuzz Shop</p>
 			<div>
