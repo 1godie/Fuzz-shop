@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
 import { Icon } from "astro-icon/components";
-
 ---
 
 <!doctype html>
@@ -16,16 +15,10 @@ import { Icon } from "astro-icon/components";
 	</head>
 
 	<body>
-		<header>
-			<Icon name="usuario"/>
-		</header>
-		<header>
-			<Icon name="carrito"/>
-		</header>
+		<header class="flex justify-between items-center px-10 py-6">
+			<p class="text-2xl font-black">FUZZ SHOP</p>
 
-		<header>
-			<p>Fuzz Shop</p>
-			<div>
+			<div class="flex gap-4 items-centerS text-cyan-700">
 				<a href="/">Inicio</a>
 				<a href="new arrivals">New Arrivals</a>
 				<a href="best seller">Best Sellers</a>
@@ -33,9 +26,12 @@ import { Icon } from "astro-icon/components";
 				<a href="catalogo">Catalogo</a>
 			</div>
 
-			<div>
-				<a href="/carrito">Carrito</a>
-				<a href="usuario">Usuario</a>
+			<div class="flex gap-4">
+				<a href="/carrito">
+					<Icon name="carrito" size={32} />
+				</a>
+
+				<a href="usuario"> <Icon name="usuario" size={32} /></a>
 			</div>
 		</header>
 
