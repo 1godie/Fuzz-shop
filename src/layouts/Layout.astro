@@ -15,10 +15,12 @@ import { Icon } from "astro-icon/components";
 	</head>
 
 	<body>
-		<header class="flex justify-between items-center px-10 py-6 sticky top-0">
+		<header
+			class="flex justify-between items-center px-10 py-6 sticky top-0"
+		>
 			<p class="text-2xl font-black">FUZZ SHOP</p>
 
-			<div class="flex gap-4 items-centerS text-cyan-700">
+			<div class="flex gap-4 items-centerS text-gray-600">
 				<a href="/">Inicio</a>
 				<a href="new arrivals">New Arrivals</a>
 				<a href="best seller">Best Sellers</a>
@@ -36,5 +38,28 @@ import { Icon } from "astro-icon/components";
 		</header>
 
 		<slot />
+
+		<footer class="flex gap-8 flex-col bg-stone-50 py-8 px-10 gap-8">
+			<div class="flex justify-between">
+				<div class="flex-1">
+					<p class="font-black py-4">Fuzz Shop</p>
+					Crafted for the tactile minimalist. Elevating daily essentials
+					through intentional design and artisanal quality.
+				</div>
+				<div class="flex-col flex-1 items-center py-4">
+					<p class="font-black">Customer Service</p>
+					<a href="shipping and return">Shipping and Return</a>
+					<a href="privacy and policy">Privacy and Policy</a>
+					<a href="terms of service">Terms of Service</a>
+				</div>
+				<div class="flex-1 py-4">
+					<p class="font-black">Connect</p>
+					<a href="connect">Connect</a>
+				</div>
+			</div>
+
+
+			<div>© 2026 Fuzz Shop. Crafted for the tactile minimalist.</div>
+		</footer>
 	</body>
 </html>
