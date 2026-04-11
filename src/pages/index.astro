@@ -1,15 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
-<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="style.css" />
 <Layout>
 	<section class="relative overflow-hidden flex px-32 py-56">
-		<img src="/imagen fondo inicio.png"  class="absolute -z-1 w-full h-full left-0 top-0 object-cover">
+		<img
+			src="/imagen fondo inicio.png"
+			class="absolute -z-1 w-full h-full left-0 top-0 object-cover"
+		/>
 		<div>
 			<div class="text-8xl font-black py-6">The New Standard</div>
 			<p class="text-2xl text-cyan-800 py-8">
-				Curated silhouettes designed for the modern 
-				tactile minimalist. Quiet luxury, loud presence.
+				Curated silhouettes designed for the modern tactile minimalist.
+				Quiet luxury, loud presence.
 			</p>
 			<div>
 				<button class="font-light bg-blue-500 text-mist-50 p-6 py-2">
@@ -18,4 +22,30 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 		</div>
 	</section>
+	<section class="flex gap">
+        <div class="flex flex-1">
+            <img class=" object-cover" src="/chaqueta new arrivals.png" alt="" />
+
+            <div>
+                <div>Outerwear</div>
+                <div>Explore Collection</div>
+            </div>
+
+        </div>
+        
+        <div class="flex-1">
+            <div>
+                <img class="w-full"
+                src="/blusa new arrivals.png" alt="" />
+                <p>Tops</p>
+                
+            </div>
+            <div>
+                <img class="w-full"
+                src="/ropa interior new arrivals.png" alt="" />
+                
+                <section>Bottons</section>
+            </div>
+        </div>
+    </section>
 </Layout>
