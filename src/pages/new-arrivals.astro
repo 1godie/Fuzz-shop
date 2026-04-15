@@ -1,4 +1,5 @@
 ---
+import Productos from "../components/Productos.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -32,41 +33,33 @@ import Layout from "../layouts/Layout.astro";
         </div>
     </section>
 
-    <section class="flex gap">
-        <div class="flex-1">
-            <div><img src="/nimg new arrival.png" alt="" /></div>
-            <div class="text-2xl text-black font-black py-2">
-                Structured Wool Coat
-            </div>
-            <div>Camel / Virgin Wool</div>
-            <div>840$</div>
-        </div>
-        <div>
-            <div><img src="/sueter negro new arrivals.png" alt="" /></div>
-            <div class="text-2xl text-black font-black py-2">
-                Silk Turtleneck
-            </div>
-            <div>Midnight / Mulberry Silk</div>
-            <div>$320</div>
-        </div>
+    <section class="flex px-40">
+        <Productos
+            titulo="Structured Wool Coat"
+            subtitulo="Camel / Virgin Wool"
+            precios="$840"
+            imagenes="/nimg new arrival.png"
+        />
+        <Productos
+            titulo="Silk Turtleneck"
+            subtitulo="Midnight / Mulberry Silk"
+            precios="$320"
+            imagenes="/sueter negro new arrivals.png"
+        />
     </section>
 
-    <section class="flex gap">
-        <div class="flex-1">
-            <div><img src="/zapato new arrivals.png" alt="" /></div>
-            <div class="text-2xl text-black font-black py-2">
-                Bonded Leather Sneakers
-            </div>
-            <div>Bone / Italian Calf</div>
-            <div>$410</div>
-        </div>
-        <div>
-            <img src="/pantalones new arrivals.png" alt="" />
-            <div class="text-2xl text-black font-black py-2">
-                Wide Leg Denim
-            </div>
-            <div>Raw Indigo / 14oz Selvedge</div>
-            <div>$295</div>
-        </div>
+    <section class="flex gap-3 justify-beetwen px-40 py-10">
+        <Productos
+            titulo="Wide Leg Denim"
+            subtitulo="Bone / Italian Calf"
+            precios="$295"
+            imagenes="pantalones new arrivals.png"
+        />
+        <Productos
+            titulo="Bonded Leather Sneakers"
+            subtitulo="Raw Indigo / 14oz Selvedge"
+            precios="$410"
+            imagenes="zapato new arrivals.png"
+        />
     </section>
 </Layout>
