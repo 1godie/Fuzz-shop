@@ -1,12 +1,63 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import TarjetaCatalogo from "../components/TarjetaCatalogo.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    
-    <section  class="grid grid-cols-4">
-        <!-- Aquì van las tarjetas  -->
+    <section class="py-6">
+        <div>
+            <p class="text-8xl text-black font-black flex-1">
+                THE SPRING ASSEMBLY.
+            </p>
+        </div>
+        <div class="text-2xl">
+            A curated selection of tactile essentials. Focused on silhouettes,
+            texture, and the quiet luxury of high-grade materials.
+        </div>
     </section>
 
-
-</Layout>
+    <section class="flex-justify beetwen">
+        <section class="flex justify-end">
+            <div>Sorting: Latest Release 24 Items Total</div>
+        </section>
+        <section class="flex justify-beetwen px-4 py-4">
+            <TarjetaCatalogo
+                imagenes="chaqueta negra catalogo.png"
+                titulo="STRUCTURED TOPCOAT"
+                subtitulo="Japanese Virgin Wool"
+                precio="$485.00"
+            />
+            <TarjetaCatalogo
+                imagenes="chaqueta de cuero catalogo.png"
+                titulo="ARCHIVE LEATHER JACKET"
+                subtitulo="Full-Grain Calfskin"
+                precio="$1,250.00"
+            />
+            <TarjetaCatalogo
+                imagenes="sueter azul tejido catalogo.png"
+                titulo="ELECTRIC KNOT SWEATER"
+                sutitulo="Tech-Knit Viscose"
+                precio="$220.00"
+            />
+        </section>
+        <section class="flex justify-between px-4 py-4">
+            <TarjetaCatalogo
+                imagenes="camisa blanca catalogo.png"
+                titulo="ESSENTIAL HEAVY TEE"
+                subtitulo="Organic Cotton 300GSM"
+                precio="$75.00"
+            />
+            <TarjetaCatalogo
+                imagenes="modelo con gabardina catalogo.png"
+                titulo="OVERSIZED TRENCH"
+                subtitulo="Cotton Gabardine"
+                precio="$620.00"
+            />
+            <TarjetaCatalogo
+            imagenes="pantalon catalogo.png"
+            titulo="RAW SELVEDGE DENIM"
+            subtitulo="14oz Indigo Rigid"
+            precio="$195.00"/>
+        </section>
+    </section></Layout
+>

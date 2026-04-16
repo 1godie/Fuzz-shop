@@ -1,0 +1,15 @@
+---
+const titulo = Astro.props.titulo;
+const subtitulo = Astro.props.subtitulo;
+const precio = Astro.props.precio;
+const imagenes = Astro.props.imagenes;
+---
+
+<div class="flex-1">
+    <div><img src={imagenes} alt="" /></div>
+    <div class="text-2xl text-black font-black py-2">
+        {titulo}
+    </div>
+    <div>{subtitulo}</div>
+    <div>{precio}</div>
+</div>
