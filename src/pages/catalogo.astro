@@ -1,6 +1,45 @@
 ---
 import TarjetaCatalogo from "../components/TarjetaCatalogo.astro";
 import Layout from "../layouts/Layout.astro";
+
+const catalogo = [
+    {
+        imagenes: "chaqueta negra catalogo.png",
+        titulo: "STRUCTURED TOPCOAT",
+        subtitulo: "Japanese Virgin Wool",
+        precio: "$485.00",
+    },
+    {
+        imagenes: "chaqueta de cuero catalogo.png",
+        titulo: "ARCHIVE LEATHER JACKET",
+        subtitulo: "Full-Grain Calfskin",
+        precio: "$1,250.00",
+    },
+    {
+        imagenes: "sueter azul tejido catalogo.png",
+        titulo: "ELECTRIC KNOT SWEATER",
+        sutitulo: "Tech-Knit Viscose",
+        precio: "$220.00",
+    },
+    {
+        imagenes: "camisa blanca catalogo.png",
+        titulo: "ESSENTIAL HEAVY TEE",
+        subtitulo: "Organic Cotton 300GSM",
+        precio: "$75.00",
+    },
+    {
+        imagenes: "modelo con gabardina catalogo.png",
+        titulo: "OVERSIZED TRENCH",
+        subtitulo: "Cotton Gabardine",
+        precio: "$620.00",
+    },
+    {
+        imagenes:"pantalon catalogo.png" ,
+        titulo:"RAW SELVEDGE DENIM" ,
+        subtitulo:"14oz Indigo Rigid" ,
+        precio:"$195.00"
+    }
+];
 ---
 
 <Layout>
@@ -20,44 +59,15 @@ import Layout from "../layouts/Layout.astro";
         <section class="flex justify-end">
             <div>Sorting: Latest Release 24 Items Total</div>
         </section>
-        <section class="flex justify-beetwen px-4 py-4">
-            <TarjetaCatalogo
-                imagenes="chaqueta negra catalogo.png"
-                titulo="STRUCTURED TOPCOAT"
-                subtitulo="Japanese Virgin Wool"
-                precio="$485.00"
-            />
-            <TarjetaCatalogo
-                imagenes="chaqueta de cuero catalogo.png"
-                titulo="ARCHIVE LEATHER JACKET"
-                subtitulo="Full-Grain Calfskin"
-                precio="$1,250.00"
-            />
-            <TarjetaCatalogo
-                imagenes="sueter azul tejido catalogo.png"
-                titulo="ELECTRIC KNOT SWEATER"
-                sutitulo="Tech-Knit Viscose"
-                precio="$220.00"
-            />
-        </section>
-        <section class="flex justify-between px-4 py-4">
-            <TarjetaCatalogo
-                imagenes="camisa blanca catalogo.png"
-                titulo="ESSENTIAL HEAVY TEE"
-                subtitulo="Organic Cotton 300GSM"
-                precio="$75.00"
-            />
-            <TarjetaCatalogo
-                imagenes="modelo con gabardina catalogo.png"
-                titulo="OVERSIZED TRENCH"
-                subtitulo="Cotton Gabardine"
-                precio="$620.00"
-            />
-            <TarjetaCatalogo
-            imagenes="pantalon catalogo.png"
-            titulo="RAW SELVEDGE DENIM"
-            subtitulo="14oz Indigo Rigid"
-            precio="$195.00"/>
+        <section class="grid grid-cols-3 justify-beetwen px-4 py-4">
+            {catalogo.map((item) => (
+                <TarjetaCatalogo
+                    imagenes={item.imagenes}
+                    titulo={item.titulo}
+                    subtitulo={item.subtitulo}
+                    precio={item.precio}
+                />
+            ))}
         </section>
     </section></Layout
 >
