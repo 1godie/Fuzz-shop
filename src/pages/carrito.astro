@@ -5,7 +5,9 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
     <section class="px-20">
         <div class="text-8xl font-black py-3">Your Cart</div>
-        <div class="text-2xl opacity-65">Review your tactile selections before checkout.</div>
+        <div class="text-2xl opacity-65">
+            Review your tactile selections before checkout.
+        </div>
     </section>
 
     <div class="flex gap-10">
@@ -19,11 +21,22 @@ import Layout from "../layouts/Layout.astro";
                 <div class="text-2xl fond-bold flex justify-end">Remove</div>
             </div>
         </section>
-
-        <section class="flex gap-6 justify-end text-4xl font-black p-5">
-            <div><p>Summary</p></div>
-            <div>carrito</div>
-
+        <section>
+            <section class="flex gap-6 justify-end text-4xl font-black p-5">
+                <div><p>Summary</p></div>
+            </section>
+            <div>
+                <div class="opacity-65">Subtotal</div>
+                <div class="py-4">Estimated Shipping</div>
+                <div>Tax</div>
+            </div>
+            <section>
+                <p>
+                    <div>$945.00</div>
+                    <div>$15.00</div>
+                    <div>$78.40</div>
+                </p>
+            </section>
         </section>
     </div>
 </Layout>
